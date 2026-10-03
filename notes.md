@@ -14,6 +14,10 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 * There is a reset option. This is to change the colors to default.
 
 ## ColorPrinter.java / ColorPrinterTest.java
+* As the name suggests, it's meant to print lines in color.
+* Can check current color, set a new color, reset the color used, and various printing functions.
+* One of the standard print methods is unfinished.
+* Looks like the color will reset unless you tell it not to.
 
 ## TruffulaOptions.java / TruffulaOptionsTest.java
 
