@@ -31,3 +31,5 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 * printTree() is TODOed.
 
 ## AlphabeticalFileSorter.java
+* As name suggests, lets the files and directories be sorted in alphabetical order.
+* We don't need to understand this in its entirety yet. Uses lambdas.
