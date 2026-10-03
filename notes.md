@@ -20,6 +20,9 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 * Looks like the color will reset unless you tell it not to.
 
 ## TruffulaOptions.java / TruffulaOptionsTest.java
+* This is really similar to App.java.
+* I expect a lot of the work on App.java will be implementing these methods.
+* First TruffulaOptions has a TODO on it.
 
 ## TruffulaPrinter.java / TruffulaPrinterTest.java
 
