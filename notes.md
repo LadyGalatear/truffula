@@ -4,6 +4,8 @@ As part of Wave 0, please fill out notes for each of the below files. They are i
 PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 
 ## App.java
+* There's a main method and notes on what it should implement.
+* Options: Hidden files shown? Color? Which root directory?
 
 ## ConsoleColor.java
 
