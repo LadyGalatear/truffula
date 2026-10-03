@@ -25,5 +25,9 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 * First TruffulaOptions has a TODO on it.
 
 ## TruffulaPrinter.java / TruffulaPrinterTest.java
+* This ugly mother prints the directory tree, calling upon TruffulaOptions to figure out how.
+* Makes a color printer to output.
+* Many, many constructors.
+* printTree() is TODOed.
 
 ## AlphabeticalFileSorter.java
