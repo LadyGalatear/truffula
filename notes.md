@@ -8,6 +8,10 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 * Options: Hidden files shown? Color? Which root directory?
 
 ## ConsoleColor.java
+* Enum. You remember enums.
+* Uses ANSI codes. I am not familiar with ANSI.
+* Supported colors: black, red, green, yellow, blue, purple, cyan, and white.
+* There is a reset option. This is to change the colors to default.
 
 ## ColorPrinter.java / ColorPrinterTest.java
 
