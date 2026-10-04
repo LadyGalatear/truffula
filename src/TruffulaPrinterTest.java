@@ -149,4 +149,29 @@ public class TruffulaPrinterTest {
         // Assert that the output matches the expected output exactly
         assertEquals(expected.toString(), output);
     }
+
+    @Test
+    void testBasicTree(@TempDir File tempDir) throws IOException {
+        File folder = new File(tempDir, "myFolder");
+        folder.mkdir();
+
+        File file = new File(folder, "SelfInsertFanfiction.txt");
+        file.createNewFile();
+
+        TruffulaOptions options = new TruffulaOptions(folder, true, false);
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        PrintStream printStream = new PrintStream(baos);
+
+        TruffulaPrinter printer = new TruffulaPrinter(options, printStream);
+
+        printer.printTree();
+
+        String output = baos.toString();
+        String nl = System.lineSeparator();
+        String expected = ConsoleColor.WHITE.getCode() + "myFolder" + nl + ConsoleColor.RESET.getCode() + 
+            ConsoleColor.WHITE.getCode() + "   SelfInsertFanfiction.txt" + nl + ConsoleColor.RESET.getCode();
+
+        assertEquals(expected, output);
+    }
 }
