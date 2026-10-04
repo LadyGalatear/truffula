@@ -41,4 +41,19 @@ class ColorPrinterTest {
 
     assertEquals(expectedOutput, outputStream.toString());
   }
+
+  @Test
+  void testPrintWithPurpleColorAndExplicitReset() {
+    ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+    PrintStream printStream = new PrintStream(outputStream);
+
+    ColorPrinter printer = new ColorPrinter(printStream);
+    printer.setCurrentColor(ConsoleColor.PURPLE);
+
+    String message = "underground sugar caves";
+    printer.print(message, true);
+    String expectedOutput = ConsoleColor.PURPLE + "underground sugar caves" + ConsoleColor.RESET;
+
+    assertEquals(expectedOutput, outputStream.toString());
+  }
 }
